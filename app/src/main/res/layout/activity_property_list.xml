@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/fl_parent"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -9,8 +10,8 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:paddingStart="12dp"
-        android:paddingEnd="12dp"
         android:paddingTop="80dp"
+        android:paddingEnd="12dp"
         android:paddingBottom="100dp">
 
         <include layout="@layout/backdrop_filter" />
@@ -55,10 +56,13 @@
         android:elevation="8dp"
         app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/recycler_view"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+        <ProgressBar
+            android:id="@+id/pb_progress"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginBottom="12dp"
+            android:visibility="gone" />
 
     </androidx.core.widget.NestedScrollView>
 

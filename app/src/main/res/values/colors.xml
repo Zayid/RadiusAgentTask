@@ -7,4 +7,5 @@
     <color name="toolbarIconColor">@color/textColorPrimary</color>
     <color name="productGridBackgroundColor">#FFFBFA</color>
     <color name="textInputOutlineColor">#FBB8AC</color>
+    <color name="textTitle">#2C2C2C</color>
     </resources>
